@@ -33,6 +33,7 @@ body {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
+/* ========================= LEFT SIDE ========================= */
 .container .left-side {
   position: relative;
   background: #023e8a;
@@ -134,8 +135,49 @@ body {
   letter-spacing: 2px;
 }
 
+.side_info.language .language_text{
+  color: #ffffff;
+}
+
+.side_info.language .language_percentage{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  display: block;
+  margin-top: 5px;
+  background: #081921;
+}
+
+.side_info.language .language_percentage div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+/* ========================= RIGHT SIDE ========================= */
 .container .right-side {
   position: relative;
   background: #ffffff;
   padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0px;
+}
+
+.about_text {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #333333;
 }
