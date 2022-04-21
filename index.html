@@ -10,17 +10,20 @@
 </head>
 <body>
     <div class="container">
+            <!-- ==================================================== LEFT ==================================================== -->
         <div class="left-side">
-            <div class="profile_text">
+
+            <!-- ========================== HEADER PROFILE ========================== -->
+            <div class="profile_container">
                 <div class="image_box">
-                    <img src="./assets/img/profile_bw.png" alt="profile picture" class="image_profile">
+                    <img src="./assets/img/profile_bw.png" alt="profile picture" class="profile_image">
                 </div>
                 <h2>Lucas Rosa</br><span>Full Stack Developer</span></h2>
             </div>
 
             <!-- ========================== CONTACTS ========================== -->
-            <div class="side_info">
-                <h3 class="side_title">Contact Info</h3>
+            <div class="left_side_info">
+                <h3 class="left_side_title">Contact Info</h3>
                 <ul>
                     <li>
                         <!-- Github -->
@@ -41,8 +44,9 @@
                 </ul>
             </div>
 
-            <div class="side_info education">
-                <h3 class="side_title">Education</h3>
+            <!-- ========================== EDUCATION ========================== -->
+            <div class="left_side_info education">
+                <h3 class="left_side_title">Education</h3>
                 <ul>
                     <li>
                         <h5>2019 - 2020</h5>
@@ -62,30 +66,203 @@
                 </ul>
             </div>
 
-            <div class="side_info language">
-                <h3 class="side_title">Language</h3>
+            <!-- ========================== SKILLS ========================== -->
+            <div class="left_side_info language">
+                <h3 class="left_side_title">Skills</h3>
                 <ul>
                     <li>
-                        <span class="language_text">English</span>
+                        <span class="language_text">Frontend</span>
                         <span class="language_percentage">
                             <div style="width: 90%;"></div>
                         </span>
+                        <ul class="skill_list">
+                            <li>• HTML</li>
+                            <li>• CSS</li>
+                            <li>• Angular</li>
+                        </ul>
                     </li>
                     <li>
-                        <span class="language_text">Portuguese</span>
+                        <span class="language_text">Backend</span>
                         <span class="language_percentage">
-                            <div style="width: 50%;"></div>
+                            <div style="width: 90%;"></div>
                         </span>
+                        <ul class="skill_list">
+                            <li>• HTML</li>
+                            <li>• CSS</li>
+                            <li>• Angular</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="language_text">Database</span>
+                        <span class="language_percentage">
+                            <div style="width: 90%;"></div>
+                        </span>
+                        <ul class="skill_list">
+                            <li>• HTML</li>
+                            <li>• CSS</li>
+                            <li>• Angular</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="language_text">Clean Code</span>
+                        <span class="language_percentage">
+                            <div style="width: 90%;"></div>
+                        </span>
+                        <ul class="skill_list">
+                            <li>• HTML</li>
+                            <li>• CSS</li>
+                            <li>• Angular</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ========================== LANGUAGE ========================== -->            
+            <div class="left_side_info language">
+                <h3 class="left_side_title">Language</h3>
+                <ul>
+                    <li>
+                        <span class="language_text">English <span>B2+</span></span>
+                    </li>
+                    <li>
+                        <span class="language_text">Portuguese <span>Native</span></span>
                     </li>
                 </ul>
             </div>
         </div>
 
+        <!-- ==================================================== RIGHT ==================================================== -->
         <div class="right-side">
+
+            <!-- ========================== PROFILE ========================== -->            
             <div class="about">
-                <h2 class="about_text">Profile</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laboriosam perspiciatis alias architecto, quo quae sit officiis quidem fugit quos facere beatae eius incidunt nobis laborum quis omnis amet tempore accusamus dolorem repudiandae eum commodi blanditiis. Exercitationem minus dolorem maxime consequatur? Error dolores quaerat esse.</p>
+                <h2 class="right_text">Profile</h2>
+                <p>I am passionate about technology, innovation, and self-improvement. Currently working as a Java Engineer in an innovative company that uses high-end technology such as microservices, messaging to produce highly scalable, and modular software aiming to solve complex problems.</p>
             </div>
+
+            <!-- ========================== EXPERIENCE ========================== -->            
+            <div class="about experience">
+                <h2 class="right_text">Experience</h2>
+
+                <div class="experience_container">
+                    <div class="experience_year">
+                        <h5>Jun 2021 - present</h5>
+                        <h5>Multivision</h5>
+                    </div>
+                    <div class="experience_text">
+                        <h4>Backend Developer</h4>
+                        <p>Working with a Digital Service Provider solution for a big telecom company.</p>
+                        <p>Responsible for the creation of a guide to help the team on how
+                            to use good programming practices, such as Clean Code, design
+                            patterns, SOLID principles, and other important laws such as DRY,
+                            KISS, Boy Scout Rule, and so on.</p>
+                        <p><strong>Technologies:</strong> Java EE, OSGi, Karaf, JUnit, Mockito, AssertJ, REST,
+                            Hibernate, Oracle SQL, PostgreSQL, MongoDB, Git, Jenkins, Gitlab,
+                            Docker, Jax-RS, WSDL, Maven.</p>
+                        <p><strong>Methodology:</strong> Agile software development (SCRUM).</p>
+                    </div>
+                </div>
+
+                <div class="experience_container">
+                    <div class="experience_year">
+                        <h5>Feb 2021 - Jun 2021</h5>
+                        <h5>Itau</h5>
+                    </div>
+                    <div class="experience_text">
+                        <h4>Java Software Engineer</h4>
+                        <p>Working with a digital banking solution, focused on client authentication. Responsible for implementing new features and fixing bugs
+                            from coding to release.</p>
+                        <p>Responsible for implementing new features for a digital banking solution.</p>
+                        <p>Responsible for releases on production.</p>
+                        <p>Responsible for solving any production issues related to the backend layer.</p>
+                        <p>Responsible for the analysis of the system’s performance for big
+                            marketing events involving the digital banking solution.</p>
+                        <p><strong>Technologies:</strong> Java EE, AWS, Splunk.</p>
+                        <p><strong>Methodology:</strong> Agile software development (SCRUM).</p>
+                    </div>
+                </div>
+
+                <div class="experience_container">
+                    <div class="experience_year">
+                        <h5>May 2020 - Feb 2021</h5>
+                        <h5>Avenue Code</h5>
+                    </div>
+                    <div class="experience_text">
+                        <h4>Java Software Engineer </h4>
+                        <p>Working with a protection plan company, integrating with payment
+                            solutions, and developing new features to the system, which uses
+                            microservice as the architect solution.</p>
+                        <p>Responsible for implementing new features for a protection plan
+                            system built using a microservices strategy.</p>
+                        <p>Responsible for implementing BDD-based tests using a custom
+                            framework developed by the company based on Behave.</p>
+                        <p>Responsible for solving any production issues related to the backend layer.</p>
+                        <p><strong>Technologies:</strong> Java Spring Boot, OSGi, Docker, RabbitMQ,
+                            Javascript, Python, Shell Script, PostgreSQL, Behave. Splunk.</p>
+                        <p><strong>Methodology:</strong> Agile software development (SCRUM).</p>
+                    </div>
+                </div>
+
+                <div class="experience_container">
+                    <div class="experience_year">
+                        <h5>Feb 2019 - May 2020</h5>
+                        <h5>Wintaylor</h5>
+                    </div>
+                    <div class="experience_text">
+                        <h4>Full-stack Developer</h4>
+                        <p>Working with a Digital Service Provider solution for a big telecom company.</p>
+                        <p>Responsible for the creation of a guide to help the team on how
+                            to use good programming practices, such as Clean Code, design
+                            patterns, SOLID principles, and other important laws such as DRY,
+                            KISS, Boy Scout Rule, and so on.</p>
+                        <p><strong>Technologies:</strong> Java EE, OSGi, Karaf, JUnit, Mockito, AssertJ, REST,
+                            Hibernate, Oracle SQL, PostgreSQL, MongoDB, Git, Jenkins, Gitlab,
+                            Docker, Jax-RS, WSDL, Maven.</p>
+                        <p><strong>Methodology:</strong> Agile software development (SCRUM).</p>                    </div>
+                </div>
+
+                <div class="experience_container">
+                    <div class="experience_year">
+                        <h5>May 2018 - Feb 2019</h5>
+                        <h5>FITec</h5>
+                    </div>
+                    <div class="experience_text">
+                        <h4>Full-stack Developer</h4>
+                        <p>Working on the development of Workforce software.</p>
+                        <p>Responsible for leading the development team.</p>
+                        <p>Propose new solutions for the software architecture, development
+                            process optimization, and UX.</p>
+                        <p>Responsible for implementing analysis API based on Workforce
+                            software data using Swagger.</p>
+                        <p>Responsible for designing and implementing new screens to show
+                            analysis data such as dashboards using Highcharts.</p>
+                        <p>Responsible for creating unit tests.</p>
+                        <p>Responsible for creating front-end E2E test using Cypress.io.</p>
+                        <p><strong>Technologies:</strong> Java EE, Spring Boot, Vanilla JS, jQuery, HTML, CSS,
+                            jUnit, Cypress, Thymeleaf, Microsoft SQL Server, Mockito, SVN, Git,
+                            and Hudson.</p>
+                        <p><strong>Methodology:</strong> Agile software development (SCRUM).</p>                    </div>
+                </div>
+
+                <div class="experience_container">
+                    <div class="experience_year">
+                        <h5>Jan 2018 - Apr 2018</h5>
+                        <h5>FocusNetworks</h5>
+                    </div>
+                    <div class="experience_text">
+                        <h4>Java Developer</h4>
+                        <p>Working with a Digital Service Provider solution for a big telecom company.</p>
+                        <p>Responsible for the creation of a guide to help the team on how
+                            to use good programming practices, such as Clean Code, design
+                            patterns, SOLID principles, and other important laws such as DRY,
+                            KISS, Boy Scout Rule, and so on.</p>
+                        <p><strong>Technologies:</strong> Java EE, OSGi, Karaf, JUnit, Mockito, AssertJ, REST,
+                            Hibernate, Oracle SQL, PostgreSQL, MongoDB, Git, Jenkins, Gitlab,
+                            Docker, Jax-RS, WSDL, Maven.</p>
+                        <p><strong>Methodology:</strong> Agile software development (SCRUM).</p>                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
