@@ -1,6 +1,42 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --title-color: #0b0a0a;
+  --text-color: #403a3a;
+  --text-color-light: #a01474;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
+  --text-color-light-gray: #707070;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -225,6 +261,168 @@ p {
   font-size: 0.9em;
 }
 
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.generate-pdf {
+  /* display: none; */
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.generate-pdf:hover {
+  color: #a3c4f3;
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .generate-pdf {
+  display: none;
+}
+
+.scale-cv .bd-container {
+  max-width: 595px;
+}
+
+.scale-cv .section {
+  padding: 1.5rem 0 0.8rem;
+}
+
+.scale-cv .section-title {
+  margin-bottom: 0.75rem;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  padding: 0 1rem;
+}
+
+.scale-cv .image_box {
+  width: 110px;
+  height: 110px;
+}
+
+.scale-cv .container .right-side,
+.scale-cv .container .left-side {
+  padding: 20px;
+}
+
+.scale-cv .about {
+    margin-bottom: 20px;
+}
+
+.scale-cv .experience .experience_container .experience_year {
+  min-width: 100px;
+  font-size: 0.9em;
+}
+
+.scale-cv .home__container {
+  gap: 1.5rem;
+}
+
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .home__address,
+.scale-cv .social__container {
+  gap: 0.75rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon {
+  font-size: 1rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container {
+  gap: 1rem;
+}
+
+.scale-cv .education__time,
+.scale-cv .experience__time {
+  padding-right: 0.5rem;
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder {
+  width: 11px;
+  height: 11px;
+  margin-top: 0.22rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+  width: 1px;
+  height: 110%;
+  transform: translate(5px, 0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .skills__name {
+  margin-bottom: var(--mb-1);
+}
+
+.scale-cv .interests__container,
+.scale-cv .languages__content {
+  column-gap: 2.5rem;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* ========================= RESPONSIVE ========================= */
 @media (max-width: 1000px) {
   .container {
@@ -240,5 +438,9 @@ p {
 
   .about .experience_container .experience_year {
     margin-bottom: 5px;
+  }
+
+  .generate-pdf {
+    display: inline-block;
   }
 }

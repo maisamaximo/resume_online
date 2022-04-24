@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Lucas Rosa</title>
 </head>
-<body>
-    <div class="container">
+<body class="scale-cv">
+    <div class="container bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+
             <!-- ==================================================== LEFT ==================================================== -->
         <div class="left-side">
 
@@ -19,6 +21,7 @@
                     <img src="./assets/img/profile_bw.png" alt="profile picture" class="profile_image">
                 </div>
                 <h2>Lucas Rosa</br><span>Full Stack Developer</span></h2>
+                <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
             </div>
 
             <!-- ========================== CONTACTS ========================== -->
@@ -265,5 +268,10 @@
 
         </div>
     </div>
+
+    <!--========== PDF ==========-->
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
